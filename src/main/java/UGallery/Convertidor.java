@@ -14,6 +14,7 @@ import javax.swing.JList;
 import javax.swing.JOptionPane;
 
 
+
 public class Convertidor extends javax.swing.JFrame {
     DefaultListModel modelo;
     private ListaEnlazada listaUsuarios;
@@ -27,13 +28,13 @@ public class Convertidor extends javax.swing.JFrame {
      */
     public Convertidor() {
         initComponents();
-        listaUsuarios=data.getListaUsuarios();
+      
         modelo = new DefaultListModel();
         listaImagenesEdicion = new ArrayList<>();
         
         CargarUsuarios();
         this.setTitle("Lotes Editor");
-        this.data=data;
+        
     }
 
     /**
@@ -293,29 +294,31 @@ public class Convertidor extends javax.swing.JFrame {
 
     private void jComboBoxUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxUsuariosActionPerformed
         
-        if( jComboBoxUsuarios.getSelectedItem() == null || 
-                jComboBoxUsuarios.getSelectedItem().toString().contains("---")){
-            return;
-        }
-        
-        String usuario = jComboBoxUsuarios.getSelectedItem().toString();
-        
-        if (usuario.contains(usuario))
-        
-        jComboBoxCategorias.removeAllItems();
-        jComboBoxCategorias.addItem("---");
-        
-        listaUsuarios = listaUsuarios.GetUsuario(usuario);
- 
-        ArrayList<String> listaCategorias = usuarioActual.getListaCategorias();
-        jComboBoxCategorias.removeAllItems();
-        jComboBoxCategorias.addItem("---");
-            
-        for (String categoria : listaCategorias) {
-           String nombreCategoria = categoria;
-           
-           jComboBoxCategorias.addItem(nombreCategoria);
-        }
+         if (jComboBoxUsuarios.getSelectedItem() == null ||
+        jComboBoxUsuarios.getSelectedItem().toString().contains("---")) {
+    return;
+    }
+
+    String usuario = jComboBoxUsuarios.getSelectedItem().toString();
+
+
+    if (!listaUsuarios.contains(usuario)) {
+    return;
+    }
+
+    jComboBoxCategorias.removeAllItems();
+    jComboBoxCategorias.addItem("---");
+
+    /*usuarioActual = listaUsuarios.getlistaUsuarios(usuario);
+
+    ArrayList<String> listaCategorias = usuarioActual.getListaCategorias();
+    jComboBoxCategorias.removeAllItems();
+    jComboBoxCategorias.addItem("---");
+
+    for (String categoria : listaCategorias) {
+    String nombreCategoria = categoria;
+    jComboBoxCategorias.addItem(nombreCategoria);
+}*/
    
     }//GEN-LAST:event_jComboBoxUsuariosActionPerformed
 
@@ -385,21 +388,16 @@ public class Convertidor extends javax.swing.JFrame {
         jComboBoxUsuarios.removeAllItems();
         jComboBoxUsuarios.addItem("---");
 
-        Nodo nodoUsuario = listaUsuarios.getInicio();
-        while (nodoUsuario != null) {
-            jComboBoxUsuarios.addItem(nodoUsuario.getNombreUsuario());
-            nodoUsuario = nodoUsuario.getNodoSiguiente();
-        }
+      
     }
     
     
     private void cargarImagenes(String categoria){
         String path = "";
         String fileName="";
-        listaImagenes = usuarioActual.getListaImagenes();
-        Nodo2 nodoImagen = listaImagenes.getInicio();
+       
 
-        while (nodoImagen != null) {
+        /*while (nodoImagen != null) {
             if(categoria.equals(nodoImagen.getCategoria())){
 
                 path=nodoImagen.getImagePath();
@@ -413,7 +411,7 @@ public class Convertidor extends javax.swing.JFrame {
             } else {
                 break; 
             }
-        }
+        }*/
     }
       
     

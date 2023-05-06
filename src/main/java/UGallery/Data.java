@@ -9,31 +9,29 @@ package UGallery;
  * @author lenovo
  */
 public class Data {
-    private CListaUsuarios ListaUsuarios;
-    private CListaImagenes ListaImagenes;
-    
-    public Data(){
-        ListaUsuarios = new CListaUsuarios();
-        ListaImagenes = new CListaImagenes();
+    private ListaEnlazada ListaUsuarios;
+    private ListaDoble ListaImagenes;
+
+    public Data(ListaEnlazada ListaUsuarios, ListaDoble ListaImagenes) {
+        this.ListaUsuarios = ListaUsuarios;
+        this.ListaImagenes = ListaImagenes;
     }
 
-    public CListaUsuarios getListaUsuarios() {
+    public ListaEnlazada getListaUsuarios() {
         return ListaUsuarios;
     }
 
-    public void setListaUsuarios(CListaUsuarios ListaUsuarios) {
+    public void setListaUsuarios(ListaEnlazada ListaUsuarios) {
         this.ListaUsuarios = ListaUsuarios;
     }
 
-    public CListaImagenes getListaImagenes() {
+    public ListaDoble getListaImagenes() {
         return ListaImagenes;
     }
 
-    public void setListaImagenes(CListaImagenes ListaImagenes) {
+    public void setListaImagenes(ListaDoble ListaImagenes) {
         this.ListaImagenes = ListaImagenes;
     }
     
-    
  
-    
 }
