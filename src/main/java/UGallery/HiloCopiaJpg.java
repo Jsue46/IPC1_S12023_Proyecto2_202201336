@@ -4,10 +4,9 @@
  */
 package UGallery;
 
-import HandlersImagen.CopiaJpg;
+
 import java.util.ArrayList;
 import javax.swing.JTextArea;
-import proyecto2.JPEGHandler;
 
 
 public class HiloCopiaJpg extends Thread {

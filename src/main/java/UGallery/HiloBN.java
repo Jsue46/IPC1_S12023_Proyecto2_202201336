@@ -25,7 +25,7 @@ public class HiloBN extends Thread {
         for (int i = 0; i < listaImagenes.size(); i++) {
             String path = "";
             String fileName="";
-            BlancoYNegroJPG handlerBn = new BlancoYNegroJPG(listaImagenes.get(i));
+            JPEGImageHandlerBN handlerBn = new JPEGImageHandlerBN(listaImagenes.get(i));
                 path=listaImagenes.get(i);
                 fileName=path.substring(path.lastIndexOf("\\") + 1, path.lastIndexOf('.'));
             jTextConsola.append("\nImagen: " + fileName + " filtro: Blanco y negro");

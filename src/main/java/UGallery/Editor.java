@@ -247,7 +247,7 @@ public class Editor extends javax.swing.JFrame {
       }
       
       // Guardar la imagen en formato JPEG
-      File archivoRojo = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\-IPC1-S12023-Proyecto2-202201336\\ejemplo_rojo.jpg");
+      File archivoRojo = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\IPC1_S12023_Proyecto2_202201336\\ejemplo_rojo.jpg");
       try {
          ImageIO.write(imagen, "jpeg", archivoRojo);
          System.out.println("Imagen guardada correctamente.");
@@ -280,7 +280,7 @@ public class Editor extends javax.swing.JFrame {
       }
       
       // Guardar la imagen en formato JPEG
-      File archivoRojo = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\-IPC1-S12023-Proyecto2-202201336\\ejemplo_verde.jpg");
+      File archivoRojo = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\IPC1_S12023_Proyecto2_202201336\\ejemplo_verde.jpg");
       try {
          ImageIO.write(imagen, "jpeg", archivoRojo);
          System.out.println("Imagen guardada correctamente.");
@@ -313,7 +313,7 @@ public class Editor extends javax.swing.JFrame {
       }
       
       // Guardar la imagen en formato JPEG
-      File archivoRojo = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\-IPC1-S12023-Proyecto2-202201336\\ejemplo_azul.jpg");
+      File archivoRojo = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\IPC1_S12023_Proyecto2_202201336\\ejemplo_azul.jpg");
       try {
          ImageIO.write(imagen, "jpeg", archivoRojo);
          System.out.println("Imagen guardada correctamente.");
@@ -358,7 +358,7 @@ public class Editor extends javax.swing.JFrame {
       }
       
       // Guardar la imagen en formato JPEG
-      File archivoRojo = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\-IPC1-S12023-Proyecto2-202201336\\ejemplo_serpie.jpg");
+      File archivoRojo = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\IPC1_S12023_Proyecto2_202201336\\ejemplo_serpie.jpg");
       try {
          ImageIO.write(imagen, "jpeg", archivoRojo);
          System.out.println("Imagen guardada correctamente.");
@@ -389,7 +389,7 @@ public class Editor extends javax.swing.JFrame {
       }
       
       // Guardar la imagen en formato JPEG
-      File archivoRojo = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\-IPC1-S12023-Proyecto2-202201336\\convert_horizontal.jpg");
+      File archivoRojo = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\IPC1_S12023_Proyecto2_202201336\\convert_horizontal.jpg");
       try {
          ImageIO.write(imagen, "jpeg", archivoRojo);
          System.out.println("Imagen guardada correctamente.");
@@ -420,7 +420,7 @@ public class Editor extends javax.swing.JFrame {
       }
       
       // Guardar la imagen en formato JPEG
-      File archivoRojo = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\-IPC1-S12023-Proyecto2-202201336\\convert_vertical.jpg");
+      File archivoRojo = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\IPC1_S12023_Proyecto2_202201336\\convert_vertical.jpg");
       try {
          ImageIO.write(imagen, "jpeg", archivoRojo);
          System.out.println("Imagen guardada correctamente.");
@@ -460,7 +460,7 @@ public class Editor extends javax.swing.JFrame {
         }
 
         // Guardar la imagen en formato JPEG
-        File archivoBlancoNegro = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\-IPC1-S12023-Proyecto2-202201336\\convert_blanco_y_negro.jpg");
+        File archivoBlancoNegro = new File("C:\\Users\\familia\\OneDrive\\Escritorio\\Ingenieria\\Lab ipc1\\IPC1_S12023_Proyecto2_202201336\\IPC1_S12023_Proyecto2_202201336\\convert_blanco_y_negro.jpg");
         try {
             ImageIO.write(imagen, "jpeg", archivoBlancoNegro);
             System.out.println("Imagen guardada correctamente.");

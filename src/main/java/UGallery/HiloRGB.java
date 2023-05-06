@@ -4,10 +4,10 @@
  */
 package UGallery;
 
-import HandlersImagen.RgbJPG;
+
 import java.util.ArrayList;
 import javax.swing.JTextArea;
-import proyecto2.JPEGHandler;
+
 
 
 public class HiloRGB extends Thread {
@@ -26,12 +26,12 @@ public class HiloRGB extends Thread {
         for (int i = 0; i < listaImagenes.size(); i++) {
             String path = "";
             String fileName="";
-            RgbJPG handlerRgb = new RgbJPG(listaImagenes.get(i));
+            //RgbJPG handlerRgb = new RgbJPG(listaImagenes.get(i));
             path=listaImagenes.get(i);
             fileName=path.substring(path.lastIndexOf("\\") + 1, path.lastIndexOf('.'));
             jTextConsola.append("\nImagen: " + fileName + " filtro: Modificar a RGBS");
             try {
-                JPEGHandler.runHandler(handlerRgb);
+               // JPEGHandler.runHandler(handlerRgb);
             } catch (Exception e) {
                 e.printStackTrace();
             }

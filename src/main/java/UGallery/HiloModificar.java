@@ -4,10 +4,10 @@
  */
 package UGallery;
 
-import HandlersImagen.ModificarJPG;
+
 import java.util.ArrayList;
 import javax.swing.JTextArea;
-import proyecto2.JPEGHandler;
+
 
 
 public class HiloModificar extends Thread {

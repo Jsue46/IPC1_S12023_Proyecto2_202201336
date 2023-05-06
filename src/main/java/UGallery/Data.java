@@ -1,0 +1,39 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package UGallery;
+
+/**
+ *
+ * @author lenovo
+ */
+public class Data {
+    private CListaUsuarios ListaUsuarios;
+    private CListaImagenes ListaImagenes;
+    
+    public Data(){
+        ListaUsuarios = new CListaUsuarios();
+        ListaImagenes = new CListaImagenes();
+    }
+
+    public CListaUsuarios getListaUsuarios() {
+        return ListaUsuarios;
+    }
+
+    public void setListaUsuarios(CListaUsuarios ListaUsuarios) {
+        this.ListaUsuarios = ListaUsuarios;
+    }
+
+    public CListaImagenes getListaImagenes() {
+        return ListaImagenes;
+    }
+
+    public void setListaImagenes(CListaImagenes ListaImagenes) {
+        this.ListaImagenes = ListaImagenes;
+    }
+    
+    
+ 
+    
+}
